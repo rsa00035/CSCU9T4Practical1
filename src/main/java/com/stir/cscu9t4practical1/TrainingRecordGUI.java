@@ -28,7 +28,8 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
     private JButton addR = new JButton("Add");
     private JButton lookUpByDate = new JButton("Look Up");
     private JButton LookBYDate = new JButton("LookUP");
-
+    private JButton RemoveUP = new JButton("Remive UP");
+    
     private TrainingRecord myAthletes = new TrainingRecord();
 
     private JTextArea outputArea = new JTextArea(5, 50);
@@ -71,6 +72,8 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
         lookUpByDate.addActionListener(this);
         add(LookBYDate);
         LookBYDate.addActionListener(this);
+        add(RemoveUP);
+        RemoveUP.addActionListener(this);
         add(outputArea);
         outputArea.setEditable(false);
         setSize(720, 200);
